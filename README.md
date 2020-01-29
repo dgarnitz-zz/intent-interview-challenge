@@ -3,7 +3,7 @@ Shopping Cart API build for &lt;intent> interview challenge
 
 This project was built with Express.js and vanilla Javascript, as I thought using a frontend framework would be overkill. 
 
-I designed the project to be extensible so that it would work with a greater variety of items in the shopping cart. You can see this in the way the cart is created and the price is calculated. Due to time constraints I did not make the HTML generate dynamically but if this extension were complete, the site could render any number of items from the JSON catalogue. 
+I designed the project to be extensible so that it would work with a greater variety of items in the shopping cart. You can see this in the way the cart is created and the price is calculated. Furthermore, the HTML renders dynamically, so any number of items can be add/removed from the JSON catalogue. You can see in my version I added "strawberries" but you could easily remove or add more items. 
 
 To run this project:
 1) npm install
