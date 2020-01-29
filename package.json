@@ -4,11 +4,15 @@
   "description": "intent-challenge-api",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "mocha"
   },
   "author": "David Garnitz",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "mocha": "^7.0.1",
+    "supertest": "^4.0.2"
   }
 }
