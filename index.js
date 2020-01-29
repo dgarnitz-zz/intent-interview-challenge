@@ -51,7 +51,7 @@ function getCartTotal() {
             }
         }
     }
-    return String(price);
+    return String(price.toFixed(2));
 }
 
 function resetCart() {
