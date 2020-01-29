@@ -24,4 +24,14 @@
     "description": "Durian",
     "unit_price": 0.15,
     "volume_discounts": []
+    },
+    {
+    "id": "E",
+    "description": "Strawberries",
+    "unit_price": 3,
+    "volume_discounts": [{
+        "number": 3,
+        "price": 7
     }]
+    }
+]
