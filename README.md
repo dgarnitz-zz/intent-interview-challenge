@@ -17,4 +17,4 @@ To run the tests:
 
 Testing is done with mocha and supertest. 
 
-The project should be view on a web browser. I recommend Chrome, as thats what I used when testing it. It was not built mobile response due to time constraints. e 
+The project should be view on a web browser. I recommend Chrome, as thats what I used when testing it. It was not built mobile responsive due to time constraints, but that would be an easy extension. 
