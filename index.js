@@ -8,7 +8,7 @@ let catalogue = require('./catalogue.json');
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname + '/index.html'))
+    res.sendFile(path.join(__dirname + '/public/cart.html'))
     if (Object.entries(cart).length === 0 && cart.constructor === Object) {
         resetCart();
     } 
@@ -44,7 +44,6 @@ function getCartTotal() {
                 if(item.volume_discounts.length === 0 || cart[id] < item.volume_discounts[0].number) {
                     price += (item.unit_price * cart[id])
                 } else {
-                    console.log((cart[id]%item.volume_discounts[0].number))
                     price = (item.volume_discounts[0].price) 
                             * (Math.floor(cart[id]/item.volume_discounts[0].number)) 
                             + (cart[id]%item.volume_discounts[0].number)*item.unit_price

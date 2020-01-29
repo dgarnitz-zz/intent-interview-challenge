@@ -10,8 +10,8 @@ for (let add of addButtons){
 //REMOVE functionality
 let removeButtons = document.getElementsByName("remove-fruit");
 for (let remove of removeButtons){
-    remove.blur()
     remove.addEventListener("click", event => {
+        remove.blur()
         editCart(event.target.name, event.target.id);
     })
 }
