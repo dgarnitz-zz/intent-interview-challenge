@@ -28,6 +28,10 @@ app.get('/cartTotal', (req, res) => {
     res.send(getCartTotal());
 })
 
+app.get('/cartContents', (req,res) => {
+    res.send(catalogue);
+})
+
 function handleRequest(req) {
     if (req.query.add==='true') {
         cart[req.query.id]+=1;
